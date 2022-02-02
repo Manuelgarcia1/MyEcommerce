@@ -26,19 +26,22 @@ code {
 .inicio{
     width: 100%;
     margin: 0 auto;
-    padding-top: 9rem ;
+    padding-top: 2rem ;
 }
 .inicio h1{
-    font-size: 2.5rem;
-    color: #08a05c;
+    font-size: 2rem;
+    color: #000000;
+    text-align: center;
 }
 .inicio img{
     width: 100%;
 }
 
+
+
 /* ----------------- HEADER -------------------*/
 header{
-    width: 97%;
+    width: 100%;
     min-height: 100px;
     max-width:1530px;
     overflow: hidden;
@@ -46,10 +49,9 @@ header{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    position: fixed;
     box-sizing: border-box ;
     background-color: white;
-    box-shadow: 0 10px 10px #08a05c50;
+    box-shadow:  1px 0 10px 10px #8f155850;
 }
 a{      
     color: black;
@@ -57,7 +59,7 @@ a{
     text-transform: uppercase;
 }
 a:hover{
-    color: #08a05c;
+    color: #8f155850;
 }
 .menu{
     display: none;
@@ -91,8 +93,8 @@ header ul li a{
     position: absolute;
     top: -1rem;
     right: -1.5rem;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.1rem;
+    height: 2.1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -122,24 +124,26 @@ header ul li a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 1px 10px 10px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 0px 40px 4px rgb(0 0 0 / 35%);
     border: 6px solid transparent;
     cursor: pointer;
     border-radius: 5px;
+   
+    
 }
 .producto:hover{
-    border: 6px solid #08a05c57;
-    ;
+    transition: 0.5s;
+    transform: translateY(-15px);
 }
 .producto__img img{
-    width: 310px;
+    width: 250px;
 }
 .producto__footer{
     padding: 1rem;
 }
 .producto__footer h1{
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 16px;
     color: #1a202c;
     font-family: Helvetica, sans-serif
     ;
@@ -149,10 +153,12 @@ header ul li a{
     color: rgba(0, 0, 0, 0.555);
     text-transform: uppercase;
     font-size: 18px;
+    text-align: center;
 }
 .producto__footer .price{
     font-size: 2rem;
     color: #1a202c;
+    text-align: center;
 }
 .productos .bottom{
     width: 100%;
@@ -170,26 +176,30 @@ header ul li a{
 .bottom button{
     background-color: #3033d3;
     max-width: 250px;
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
     font-size: 1.5rem;
     color: white;
     font-weight: 600;
+    margin-bottom: 5px;
 }
 .bottom div{
-    background-color:#08a05c;
+    background-color: #1a202c;
     display: grid;
     align-items: center;
     text-align: center;
-    margin-left: -2rem;
     border-radius: 5px;
+    margin-left: -1rem;
+    margin-right: 20px;
+    margin-bottom: 5px;
 }
 .bottom div a{
     color: white;
     font-weight: 700;
 }
-.bottom div a:hover{
-    color: white;
+.bottom .btn:hover{
+    color: rgb(15, 15, 15);
+    transition: 0.5s;
 }
 /*-----------------CARRITO -----------*/
 .carritos{
@@ -252,7 +262,7 @@ header ul li a{
     grid-template-columns: 1fr 2fr 1fr 1fr;
     width: 80%;
     margin: 2rem auto;
-    box-shadow: 0 1px 10px saddlebrown;
+    box-shadow: 0 1px 10px #ff0040;
     border-radius: 5px;
 }
 .carrito__item div{
@@ -261,37 +271,40 @@ header ul li a{
     align-items: center;
 }
 .carrito__item img{
-    width: 10rem;
+    width: 8rem;
+    margin: auto;
 }
 .carrito__item h3{
-    margin-top: 1.5rem;
+    margin-top: auto;
     font-family: Helvetica, sans-serif;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 16px;
+    text-align: center;
 }
 .carrito__item .price{
     color: #1a202c;
-    font-size: 2rem;
+    font-size: 22px;
     font-weight: bold;
     text-align: start;
-    margin-left: -17rem ;
+    margin-left: auto;
+    margin-right: auto;
 }
 .carrito__item box-icon{
-    fill:#08a05c;
-    width: 40px;
-    height: 40px;
+    fill:#000000;
+    width: 20px;
+    height: 20px;
     cursor: pointer;
-    margin-top: .3rem;
+    margin:auto;
 }
 .carrito__item .cantidad{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 .carrito__item .remove__item box-icon{
-    width: 60px;
-    height: 80px;
-    fill:  crimson;
-    margin-top: 2rem;
+    width: 50px;
+    height: 50px;
+    fill:  rgb(182, 57, 82);
+    margin:auto;
 }
 .carrito__footer{
     text-align: center;
@@ -320,7 +333,7 @@ header ul li a{
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 13rem 1rem 0 1rem;
+    padding: 3rem 1rem 0 1rem;
     box-sizing: border-box;
 }
 .detalles h2{
@@ -330,11 +343,13 @@ header ul li a{
     margin: 0 auto;
     font-family:Helvetica, sans-serif;
     color: #1a202c;
+    text-align: center;
 }
 .detalles .price{
     font-size: 2.5rem;
-    font-weight: 700;
-    color: #08a05c;
+    
+    color: #000000;
+    text-align: center;
 }
 .detalles button{
     max-width: 300px;
@@ -348,18 +363,20 @@ header ul li a{
     font-weight: 600;
     border-radius: 8px;
     cursor: pointer;
+    margin-right: auto;
+    margin-left: auto;
 }
 .detalles .grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem 1rem;
     max-width: 350px;
+    margin-right: auto;
+    margin-left: auto;
 }
 .detalles .grid > .nuevo, .tamano{
     padding: 1rem 2rem;
     border-radius: 8px;
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 400;
     color: white;
    
 }
@@ -368,21 +385,20 @@ header ul li a{
     
 }
 .detalles .grid .tamano{
-    background-color:#f1365b;
+    background-color:#626262;
     display: flex;
 }
 .detalles .grid .tamano select{
     border: none;
     outline: 0;
     font-size: 2rem;
-    background-color:#f1365b;
+    background-color:#626262;
     color: white;
     cursor: pointer;
 }
 .detalles img{
-    min-height: 300px;
+    height: 300px;
     object-fit: contain;
-    margin-top:  -7rem;
     z-index: -1;
 }
 .detalles input{
