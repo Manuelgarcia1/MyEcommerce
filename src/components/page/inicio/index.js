@@ -1,12 +1,36 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import Portada from "images/inicio.jpg";
+import Portada2 from "images/portada2.png"
+import Portada3 from "images/portada3.png"
 
 export default function Inicio() {
     return (
-        <div className="inicio">   
-            <h1>Tienda de zapatillas, lo mejor en calidad</h1>
-            <img src={Portada} alt=""/>
+        <div className="inicio">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                     <div class="carousel-header">
+                        <h1 class="bg-blur-creme">NIKE SHOP</h1>
+                    </div>
+                    <div class="carousel-item active">
+                        <img src={Portada} alt="" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src={Portada2} alt="" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src={Portada3} alt="" />
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
     )
 }
